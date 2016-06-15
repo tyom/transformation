@@ -58,7 +58,7 @@
 
     >.module--type {
         @extend .heading-allcaps;
-        color: $nhs-light-blue;
+        color: rgba($dark-grey, 0.5);
         font-weight: $boldweight;
         font-size: 16px;
         line-height: $leading*1.5;
