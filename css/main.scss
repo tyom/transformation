@@ -1,3 +1,8 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
 @import "tools/contain-floats";
 @import "tools/media-queries";
 @import "tools/tints";
@@ -5,28 +10,25 @@
 //colours
 @import "variables/colours";
 
-//Typeface import [hot swappable type!]
-//@import "variables/fs-me";
+//fonts
 @import "variables/frutiger";
 
-// controls
-@import "modules/controls/buttons";
-@import "modules/controls/condition-navigation";
-@import "modules/controls/article-pagination";
+// // controls
+// @import "modules/controls/buttons";
+// @import "modules/controls/condition-navigation";
+// @import "modules/controls/article-pagination";
 
 //layout
 @import "modules/layout/grid";
 @import "modules/layout/layout";
 
 //Display
-//@import "modules/callout/callout";
 @import "modules/display/image-module";
 
 // Global page elements
 @import "modules/header-global/header-global";
 @import "modules/footer-global/footer-global";
 @import "modules/header-local/header-local";
-
 
 //hero element
 @import "modules/hero/hero";
