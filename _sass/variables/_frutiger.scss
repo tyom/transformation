@@ -1,0 +1,77 @@
+@import url('http://fast.fonts.net/cssapi/9b44500f-99bc-4b08-a4c9-5711016a5f12.css');
+
+$body: 20px;
+$leading: 16px;
+$family: 'Neue Frutiger W01', sans-serif;
+$bodyweight: 400;
+$boldweight: 700;
+$heavyweight: 900;
+
+
+/*
+font-family:'Frutiger Neue W01 Blk';
+font-family:'Frutiger Neue LT W06 Regular';
+font-family:'Frutiger Neue W01 Book';
+font-family:'Frutiger Neue W01 Bd';
+*/
+
+body {
+  font-family: $family;
+  font-weight: $bodyweight;
+  font-size: $body;
+  line-height: $leading*2;
+}
+
+// Reading width -  should be deprecated
+.measure {
+  max-width: 34em;
+}
+
+h1 {
+  margin: 0; padding: $leading 0;
+  font-size: 34px;
+  font-weight: $bodyweight;
+  line-height: $leading*2.5;
+  // letter-spacing: 0.01em;
+
+  @include media(mid) {
+    font-size: 50px;
+    font-weight: $bodyweight;
+    line-height: $leading*4;
+  }
+
+  @include media(large) {
+    font-weight: $bodyweight;
+    font-size: 56px;
+    line-height: $leading*4;
+  }
+
+}
+
+h2 {
+  margin: $leading 0;
+  font-size: 42px;
+  font-weight: $boldweight;
+  line-height: $leading*3;
+
+  @include media(large) {
+  }
+}
+
+h3 {
+  margin: $leading 0;
+  font-size: 26px;
+  font-weight: $bodyweight;
+  //line-height: $leading*2;
+  line-height: 30px;
+
+  @include media(large) {
+  }
+}
+
+h4 {
+  margin: $leading 0;
+  font-size: $body;
+  font-weight: $bodyweight;
+  line-height: $leading*2;
+}

@@ -1,0 +1,97 @@
+.work {
+    display: block;
+    background-color: $nhs-darkgrey;
+    background-position:center top;
+    background-repeat:no-repeat;
+    // background-image: url("/images/work-panel-top-edge.jpg");
+
+}
+
+.work-intro {
+    margin-top: $leading*6;
+    padding-bottom: $leading*4;
+    
+    @include media(mid) {
+        padding-bottom: none;
+    }
+    
+
+    >.header  {
+        @extend .heading-boldcaps;
+        color: $white;
+    }
+
+    >.body-copy {
+        color: $white;
+    }
+}
+
+.work-module {
+
+    &.-hero{
+        background-color: $nhs-lightgrey;
+    }
+    
+    &.-regular{
+        background-color: #f0f4f4;
+    }
+
+    >.work-module__header {
+        @extend .heading-xxlarge 
+    }
+}
+
+.work-module .edge {
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-image: url("/images/work-panel-bottom-edge.png");
+    height: 40px;
+}
+
+
+.module {
+    width: 100%;
+    float: left;
+    padding-right: 5%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e9e9;    
+
+    >.module--type {
+        @extend .heading-allcaps;
+        color: $nhs-light-blue;
+        font-weight: $boldweight;
+        font-size: 16px;
+        line-height: $leading*1.5;
+    }
+
+    >.module--header {
+        @extend .heading-xlarge;
+    }
+
+    @include media(large) {
+        width: 50%;
+        min-height: 540px;
+    }
+
+}
+
+.module--lead {
+    @extend .module;
+    margin-bottom: $leading*1;
+    border-bottom: none; 
+
+    >.module--desc {
+        @include media(large) {
+            width: 600px;
+        }
+    }
+
+    >.module--image {
+        margin-bottom: $leading*2;
+    }
+
+    @include media(large) {
+        width: 100%;
+    }
+
+}
