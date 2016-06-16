@@ -7,44 +7,34 @@
 @import "tools/media-queries";
 @import "tools/tints";
 
-//colours
+// colours
 @import "variables/colours";
 
-//fonts
+// fonts
 @import "variables/frutiger";
 
 // controls
 @import "modules/controls/buttons";
 
-//layout
+// layout
 @import "modules/layout/grid";
 @import "modules/layout/layout";
-
-//Display
-@import "modules/display/image-module";
 
 // Global page elements
 @import "modules/header-global/header-global";
 @import "modules/footer-global/footer-global";
-@import "modules/header-local/header-local";
 
-//hero element
+// hero element
 @import "modules/hero/hero";
 
-//Typopgraphy
+// Typopgraphy
 @import "modules/typography/base";
 @import "modules/typography/headings";
 @import "modules/typography/paragraphs";
 @import "modules/typography/lists";
 @import "modules/typography/links";
 
-// Forms
-@import "modules/forms/label";
-@import "modules/forms/input";
-@import "modules/forms/textarea";
-@import "modules/forms/errors";
-
-// Decorative elements
+// Display
 @import "modules/display/_decorative-elements";
 @import "modules/display/_focus";
 @import "modules/display/_work";
