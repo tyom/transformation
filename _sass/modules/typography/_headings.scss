@@ -20,6 +20,7 @@
 
 .heading-body {
   @extend h4;
+  font-weight: $boldweight;
 }
 
 /* remove undelines for a tags used as anchors */

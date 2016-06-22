@@ -41,20 +41,12 @@
     }
 }
 
-.work-module .edge {
-    background-position:center top;
-    background-repeat:no-repeat;
-    background-image: url("/images/work-panel-bottom-edge.png");
-    height: 40px;
-}
-
-
 .module {
     width: 100%;
     float: left;
     padding-right: 5%;
     box-sizing: border-box;
-    border-bottom: 1px solid #e1e9e9;    
+    border-bottom: 1px solid $grey-2 ; 
 
     >.module--type {
         @extend .heading-allcaps;
@@ -70,7 +62,8 @@
 
     @include media(large) {
         width: 50%;
-        min-height: 540px;
+        min-height: 480px;
+        margin-top:$leading;
     }
 
 }
