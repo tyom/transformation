@@ -1,11 +1,19 @@
 // NHS Colour palette, from http://www.nhsidentity.nhs.uk/
+
 $pure-black: #000000;
 $black: #231f20;
 $white: #ffffff;
 
+//blues
 $blue: #0072C6;
 $dark-blue: #00365D;
 $light-blue: #0091c9; 
+
+//greys
+$light-grey: #d9e1e2;
+$grey: #e6e6e6;
+$grey-2: rgba(118,134,146,0.2); 
+$dark-grey: #425563;
 
 $yellow: #FFED00;
 $yellow2: #FFB81C;
@@ -15,10 +23,8 @@ $green: #76BD18;
 $dark-green: #6AAB20;
 $feedback-button-green: #417505;
 
-$grey: #e6e6e6;
-$grey-2: rgba(118,134,146,0.2); 
-$dark-grey: #425563;
-$light-grey: #d9e1e2;
+
+
 
 $hr-white-30: rgba(white, 0.3);
 $opt-out-button-grey: #999999;
@@ -28,22 +34,23 @@ $feedback-alert-strip: #FFE799;
 
 
 // Semantic colour names
+
+//blues
 $nhs-blue: $blue;
 $nhs-light-blue: $light-blue;
 $nhs-dark-blue: $dark-blue;
 
+//Greys
 $nhs-darkgrey: $dark-grey;
 $nhs-lightgrey: $light-grey;
 
+//universal
 $page-colour: $white;
+$text-colour: #33414c;
 
-$header-bottom-margin: $hr-white-30;
-$text-colour: #33414c; //#0b0c0c; //off blacks
-
-$link-colour: $blue;
+//links
+$link-colour: $nhs-blue;
 $hover-link-colour: $light-blue;
 $visited-link-colour: #4c2c92;
-$link-colour-on-blue: $white;
-$visited-link-colour-on-blue: #D4EFFF; 
 
 $focus-colour: $yellow;
