@@ -56,9 +56,9 @@
   &.-button-outline {
     @extend .heading-allcaps;
     background-color: transparent;
-    border-color: $nhs-light-blue;
+    border-color: $nhs-blue;
     background-color: rgba($white, .2);
-    color: $nhs-light-blue;
+    color: $nhs-blue;
     margin-bottom: $leading;
     font-size: 16px;
     line-height: $leading*1;
@@ -67,7 +67,7 @@
     &:hover {
       text-decoration: none;
       color: $white;
-      background-color:$nhs-light-blue; // rgba( $nhs-blue, .7 )
+      background-color:$nhs-blue;
     }
 
   }

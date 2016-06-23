@@ -8,7 +8,7 @@
 }
 
 .work-intro {
-    margin-top: $leading*6;
+    margin-top: $leading*4;
     padding-bottom: $leading*4;
     
     @include media(mid) {
@@ -28,11 +28,11 @@
 
 .work-module {
 
-    &.-hero{
+    &.-hero {
         background-color: $nhs-lightgrey;
     }
     
-    &.-regular{
+    &.-regular {
         background-color: #f0f4f4;
     }
 
@@ -46,7 +46,8 @@
     float: left;
     padding-right: 5%;
     box-sizing: border-box;
-    border-bottom: 1px solid $grey-2 ; 
+    border-bottom: 1px solid $grey-2 ;
+    margin-top:$leading; 
 
     >.module--type {
         @extend .heading-allcaps;
@@ -58,12 +59,13 @@
 
     >.module--header {
         @extend .heading-xlarge;
+        font-weight: $boldweight;
     }
 
     @include media(large) {
         width: 50%;
         min-height: 480px;
-        margin-top:$leading;
+        
     }
 
 }

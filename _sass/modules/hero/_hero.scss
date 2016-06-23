@@ -1,5 +1,5 @@
 .hero {
-  background-color: $white;
+  background-color: $nhs-blue;
   background-image: url("/images/offset_hero.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
@@ -7,7 +7,7 @@
 
     @include media(large) {
         padding-top: $leading*4;
-        min-height: 616px;
+        min-height: 506px; //616px
 
     }
 }

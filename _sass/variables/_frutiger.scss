@@ -7,14 +7,6 @@ $bodyweight: 400;
 $boldweight: 700;
 $heavyweight: 900;
 
-
-/*
-font-family:'Frutiger Neue W01 Blk';
-font-family:'Frutiger Neue LT W06 Regular';
-font-family:'Frutiger Neue W01 Book';
-font-family:'Frutiger Neue W01 Bd';
-*/
-
 body {
   font-family: $family;
   font-weight: $bodyweight;
@@ -32,41 +24,40 @@ h1 {
   font-size: 34px;
   font-weight: $bodyweight;
   line-height: $leading*2.5;
-  // letter-spacing: 0.01em;
 
   @include media(mid) {
     font-size: 50px;
-    font-weight: $bodyweight;
     line-height: $leading*4;
   }
 
   @include media(large) {
-    font-weight: $bodyweight;
     font-size: 56px;
     line-height: $leading*4;
   }
-
 }
 
 h2 {
   margin: $leading 0;
-  font-size: 42px;
+  font-size: 30px;
   font-weight: $boldweight;
-  line-height: $leading*3;
+  line-height: $leading*2.25;
+
+  @include media(mid) {
+    font-size: 32px;
+    line-height: $leading*3;
+  }
 
   @include media(large) {
+    font-size: 36px;
+    line-height: $leading*3;
   }
 }
 
 h3 {
   margin: $leading 0;
-  font-size: 26px;
-  font-weight: $bodyweight;
-  //line-height: $leading*2;
-  line-height: 30px;
-
-  @include media(large) {
-  }
+  font-size: 24px;
+  font-weight: $boldweight;
+  line-height: $leading*2;
 }
 
 h4 {
@@ -74,4 +65,10 @@ h4 {
   font-size: $body;
   font-weight: $bodyweight;
   line-height: $leading*2;
+
+  @include media(mid) {
+  }
+
+  @include media(large) {
+  }
 }
