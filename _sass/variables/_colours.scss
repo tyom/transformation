@@ -1,0 +1,42 @@
+// NHS Colour palette, from http://www.nhsidentity.nhs.uk/
+
+$pure-black: #000000;
+$black: #231f20;
+$white: #ffffff;
+
+//blues
+$blue: #0072C6;
+$dark-blue: #00365D;
+$light-blue: #0091c9; 
+
+//greys
+$light-grey: #d9e1e2;
+$grey: #e6e6e6;
+$grey-2: #e4e7e7; 
+$dark-grey: #425563;
+
+//colours
+$red: #D81E05;
+$green: #76BD18;
+$dark-green: #6AAB20;
+$feedback-button-green: #417505;
+
+// Semantic colour names
+
+//blues
+$nhs-blue: $blue;
+$nhs-light-blue: $light-blue;
+$nhs-dark-blue: $dark-blue;
+
+//Greys
+$nhs-darkgrey: $dark-grey;
+$nhs-lightgrey: $light-grey;
+
+//universal
+$page-colour: $white;
+$text-colour: #33414c;
+
+//links
+$link-colour: $nhs-blue;
+$hover-link-colour: $light-blue;
+$visited-link-colour: #4c2c92;

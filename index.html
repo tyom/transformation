@@ -1,23 +1,148 @@
 ---
-layout: default
 ---
 
-<div class="home">
+    <div class="hero">
 
-  <h1 class="page-heading">Posts</h1>
+      <div class="content">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <div class="grid-row">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+            <div class="grid-2-3">
+                <h1 class="heading-xxlarge heading-boldcaps">Transforming digital health and care</h1>
+                <div class="divider"></div>
+                <p>NHS.UK is designing a digital health and care service that better connects patients to the information and services they need. The user is at the heart of everything we do. </p>
+            </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+          </div>
 
-</div>
+      </div>
+
+      </div>
+
+      <div id="our-focus">
+
+        <div class="content">
+
+          <div class="grid-row">
+
+            <div class="grid-2-3 focus-intro">
+                <h2 class="heading-body">Our current focus:</h2>
+            </div>
+
+          </div>
+
+          <div class="grid-row">
+
+            <div class="focus-panel">
+              <div class="focus-number">1</div>
+              <h3 class="focus-title">NHS.UK</h3>
+              <div class="divider"></div>
+              <p class="focus-description">Transforming NHS Choices to deliver the next generation of digital services. With relevant, practical, action-focused content and smart sign-posting to services.</p>
+            </div>
+
+            <div class="focus-panel">
+              <div class="focus-number">2</div>
+              <h3 class="focus-title">Digital service standards</h3>
+              <div class="divider"></div>
+              <p class="focus-description ">Publishing service standards and practical guidance to help teams deliver quality and trusted digital services.</p>
+            </div>
+            
+            <div class="focus-panel">
+              <div class="focus-number">3</div>
+              <h3 class="focus-title">Register with a GP</h3>
+              <div class="divider"></div>
+              <p class="focus-description">A service that simplifies the process for patients and help to reduce pressure on key NHS services.</p>
+            </div>  
+            
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="work">
+
+         <div class="content">
+
+          <div class="grid-row">
+
+            <div class="grid-2-3 work-intro">
+              <h2 class="header">The user at the heart of NHS.UK</h2>
+              <p class="body-copy">Our work is research-led and focuses on the needs of patients, carers and front-line staff. We constantly iterate. Our work starts small, is tested and evolves based on users’ feedback. We make things open. We want to share, learn and adapt. We work in partnership with digital health and care teams and across organisational boundaries.</p>
+              <p class="body-copy">We’ve made the following:</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="work-module -hero">
+
+        <div class="content">
+
+          <div class="grid-row">
+
+            <div class="grid-12">
+
+              <div class="module--lead">
+                <span class="module--type">Long term conditions</span>
+                <h2 class="module--header">I need to manage a long-term condition</h2>
+                <p class="module--desc">Providing a personalised experience to help patients understand and manage long term conditions</p>
+                <div class="container-video"><iframe width="640" height="360" src="https://www.youtube.com/embed/3YpgM9hG6XI" frameborder="0" allowfullscreen></iframe></div>
+                <a href="http://nhsalpha.herokuapp.com/planner/start" class="button -button-outline">Diabetes prototype</a>
+              </div>
+
+            </div>      
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="work-module -regular">
+
+        <div class="content">
+
+          <div class="grid-row">
+
+            <div class="grid-12">
+
+              <div class="module">
+                <span class="module--type">Register with a GP</span>
+                <h2 class="module--header">I need to register with a GP</h2>
+                <p class="module--desc">Simplifying the process of registering with a GP.</p>
+                <a href="http://nhsalpha.herokuapp.com/register-with-a-gp/start" class="button -button-outline">GP registration prototype</a>
+              </div>
+              
+              <div class="module">
+                <span class="module--type">Bookings</span>
+                <h2 class="module--header">I need to book and manage appointments</h2>
+                <p class="module--desc">Connecting people with the services they need, when they need them.</p>
+                <a href="http://nhsalpha.herokuapp.com/book-an-appointment/start" class="button -button-outline">Booking prototype</a>
+                <a href="http://nhsalpha.herokuapp.com/change-or-cancel-an-appointment/start" class="button -button-outline">Booking change prototype</a>
+              </div>
+
+              <div class="module">
+                <span class="module--type">Connecting to services</span>
+                <h2 class="module--header">I need to know what I can do with this symptom</h2>
+                <p class="module--desc">Using information on shoulder pain to connect to physiotherapy.</p>
+                <a href="http://nhsalpha.herokuapp.com/physiotherapy/shoulder-pain" class="button -button-outline">Physio prototype</a>
+              </div>
+
+              <div class="module">
+                <span class="module--type">Symptoms and Conditions</span>
+                <h2 class="module--header">I need to know what I should do next</h2>
+                <p class="module--desc">Relevant, practical and action-focused content and smart sign-posting to services.</p>
+                <a href="http://nhs-design.herokuapp.com/" class="button -button-outline">Symptoms and conditions pages</a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+          
+      </div>
