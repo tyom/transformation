@@ -46,12 +46,12 @@
     float: left;
     padding-right: 5%;
     box-sizing: border-box;
-    border-bottom: 1px solid $grey-2 ;
+    border-bottom: 1px solid $grey-3 ;
     margin-top:$leading; 
 
     >.module--type {
         @extend .heading-allcaps;
-        color: rgba($dark-grey, 0.5);
+        color: rgba($nhs-darkgrey, 0.5);
         font-weight: $boldweight;
         font-size: 16px;
         line-height: $leading*1.5;
