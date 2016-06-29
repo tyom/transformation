@@ -1,0 +1,14 @@
+#global-cookies-banner {
+  background-color: $grey-4;
+  padding: $leading;
+  font-size: 16px;
+  line-height: $leading;
+  display: none;
+
+  p {
+      max-width: 960px;
+      padding: 0 5%;
+      margin: 0 auto;
+  }
+
+}
