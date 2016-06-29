@@ -14,3 +14,7 @@ a:visited {
 a.on-blue {
     color: $white;
 }
+
+a:focus {
+  outline: 4px solid $nhs-warm-yellow;
+}
