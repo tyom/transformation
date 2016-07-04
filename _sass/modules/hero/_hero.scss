@@ -2,14 +2,23 @@
     background-color: $nhs-blue;
     background-image: url("../images/offset_hero.jpg");
     background-repeat: no-repeat;
+    background-position: center; 
     color: #ffffff;
     padding-bottom: $leading*2;
+    min-height: 506px;
 
     -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 100%, 0 87%);
     clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
 
     @include media(large) {
         padding-top: $leading*4;
-        min-height: 506px; //616px
+    }
+}
+
+/* faux grid padding and width */
+.hero-copy {
+    @include media(large) {
+        margin-left: 1.7%;
+        width: 71%;
     }
 }
