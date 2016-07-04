@@ -11,7 +11,7 @@
 }
 
 .global-header--link {
-  background: url("/images/nhs-logo-rgb-blue.png") no-repeat; //logotype-nhs-colour.png
+  background: url("../images/nhs-logo-rgb-blue.png") no-repeat; //logotype-nhs-colour.png
   background-size: contain;
   display: block;
   height: 32px;
@@ -19,7 +19,7 @@
   width: 79px;
 
   @include device-pixel-ratio {
-    background-image: url("/images/nhs-logo-rgb-blue@2x.png");//logotype-nhs-colour@2x.png
+    background-image: url("../images/nhs-logo-rgb-blue@2x.png");//logotype-nhs-colour@2x.png
     background-size: 79px 32px;
   }
 }
