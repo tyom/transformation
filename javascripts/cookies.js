@@ -35,9 +35,9 @@
   function showCookieMessage() {
     var message = document.getElementById("global-cookies-banner");
 
-    if (message && getCookie("nhs_visions_seen_cookie_message") === null) {
+    if (message && getCookie("seen_banner") === null) {
       message.style.display = "block";
-      setCookie("nhs_visions_seen_cookie_message", "yes", { days: 28 });
+      setCookie("seen_banner", "yes", { days: 28 });
     }
   };
 
