@@ -35,9 +35,9 @@
   function showCookieMessage() {
     var message = document.getElementById("global-cookies-banner");
 
-    if (message && getCookie("seen_banner") === null) {
+    if (message && getCookie("transformation_seen_banner") === null) {
       message.style.display = "block";
-      setCookie("seen_banner", "yes", { days: 28 });
+      setCookie("transformation_seen_banner", "yes", { days: 28 });
     }
   };
 
