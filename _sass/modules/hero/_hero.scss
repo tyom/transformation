@@ -2,13 +2,14 @@
     background-color: $nhs-blue;
     background-image: url("../images/offset_hero.jpg");
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
+    background-size: cover;
     color: #ffffff;
     padding-bottom: $leading*2;
     min-height: 506px;
 
-    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 100%, 0 87%);
-    clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 2600px 0, 2600px 100%, 0 87%);
+    clip-path: polygon(0 0, 2600px 0, 2600px 87%, 0 100%);
 
     @include media(large) {
         padding-top: $leading*4;
