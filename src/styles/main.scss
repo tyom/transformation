@@ -1,0 +1,25 @@
+@import "nhsuk-frontend/dist/scss/nhsuk";
+
+.site-section__container {
+  @include site-width-container;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#s01 {
+  background-color: $nhs-blue;
+  color: $white;
+}
+
+#s02 {
+  background-color: $yellow-50;
+}
+
+#s03 {
+  background-color: $nhs-blue;
+  color: $white;
+}
+
+#s04 {
+  background-color: $blue-10;
+}
