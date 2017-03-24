@@ -1,0 +1,36 @@
+.service-block {
+  @include element-padding;
+  border: 8px solid $blue-50;
+  background-color: $white;
+  position: relative;
+
+  @include media(desktop) {
+    min-height: 21rem;
+  }
+}
+
+.service-block__title {
+  @include underline;
+  margin-right: 60px;
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+div.service-block__phase {
+  background-color: $yellow-50;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.service-block__link {
+  @include media(desktop) {
+    @include element-padding;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

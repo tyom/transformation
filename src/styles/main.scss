@@ -1,9 +1,39 @@
 @import "nhsuk-frontend/dist/scss/nhsuk";
 
-.site-section__container {
-  @include site-width-container;
-  padding-top: 40px;
-  padding-bottom: 40px;
+@mixin underline($colour: $blue-50) {
+  margin-bottom: 1.4rem;
+
+  &::after {
+    margin-top: 1.2rem;
+    border-bottom: 3px solid $colour;
+    width: 100px;
+    content: "";
+    display: block;
+  }
+}
+
+@import "grid";
+@import "site-section";
+@import "service-block";
+@import "data-extract";
+@import "list";
+@import "callout";
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: -1rem;
+}
+
+h2 {
+  @include underline;
+  font-size: 1.6rem;
+}
+
+.video {
+  padding-top: 100%/(16/9);
+  background: $blue-50;
+  margin-top: 2rem;
+  box-shadow: 0 1px 20px rgba($black, .2);
 }
 
 #s01 {
@@ -11,7 +41,7 @@
   color: $white;
 }
 
-#s02 {
+[id^=s02] {
   background-color: $yellow-50;
 }
 

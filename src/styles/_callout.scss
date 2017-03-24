@@ -1,0 +1,24 @@
+.callout {
+  position: relative;
+
+  & + & {
+    margin-top: 1rem;
+
+    @include media(desktop) {
+      margin-top: 0;
+    }
+  }
+
+  @include media(desktop) {
+    min-height: 15rem;
+  }
+}
+
+.callout__link {
+  @include media(desktop) {
+    @include element-padding;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

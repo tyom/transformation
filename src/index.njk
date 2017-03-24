@@ -5,21 +5,185 @@ title: Transforming Digital Health
 {% from '_macros.njk' import section %}
 
 {% call section('s01') %}
-  {% include '_sections/01-transforming-digital-health.njk' %}
+  <h1>NHS.UK</h1>
+  <h2>Transforming Digital Health</h2>
+
+  <p>
+    The NHS is designing a health and care service that better connects people to the information
+    and services they need, when they need them. It will give people the tools they need to care for
+    themselves and relieve pressure on NHS services.
+  </p>
+
+  <div class="video"></div>
 {% endcall %}
 
-{% call section('s02') %}
-  {% include '_sections/02-how-are-we-doing-this.njk' %}
+
+{% call section('s02-1') %}
+  <div class="grid-row">
+    <div class="grid-column">
+      <h2>How are we doing this</h2>
+      <h3>Speak with our users</h3>
+      <p>We’ve spoken to over 700 patients, carers and front-line staff. And continue to do so.</p>
+    </div>
+    <div class="grid-column">
+      <dl class="data-extract">
+        <div>
+          <dt>677</dt>
+          <dd>Patients and carers interviewed</dd>
+        </div>
+      </dl>
+      <dl class="data-extract data-extract--var-1">
+        <div>
+          <dt>55</dt>
+          <dd>Clinicians and front-line staff</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
 {% endcall %}
+
+
+{% call section('s02-2') %}
+  <div class="grid-row">
+    <div class="grid-column">
+
+    </div>
+    <div class="grid-column">
+      <h3>Understand their needs</h3>
+      <p>By understanding user needs we can identify problems and find solutions. This is the basis of everything we do.</p>
+    </div>
+  </div>
+{% endcall %}
+
+
+{% call section('s02-3') %}
+  <div class="grid-row">
+    <div class="grid-column">
+      <h3>Learn and improve</h3>
+      <p>Our work starts small and evolves based on users’ feedback. We make things open. We continue to test and iterate. We share, learn and adapt.</p>
+    </div>
+    <div class="grid-column">
+      <dl class="data-extract">
+        <div>
+          <dt>230</dt>
+          <dd>Hours of lab and pop-up research</dd>
+        </div>
+      </dl>
+      <dl class="data-extract data-extract--var-2">
+        <div>
+          <dt><span>data from over</span> 300K</dt>
+          <dd>Beta pageviews</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+{% endcall %}
+
 
 {% call section('s03') %}
-  {% include '_sections/03-transforming-digital-content.njk' %}
+  <h2>Transforming Digital Content</h2>
+
+  <p>Relevant, practical and action-focused content and smart sign-posting to services.</p>
+
+  <div class="grid-row">
+    <div class="grid-column">
+      <h3 class="list__title">Symptoms and conditions</h3>
+      <ul class="list__list">
+        <li>How to self care</li>
+        <li>When to see a GP</li>
+        <li>What to do if you have a symptom</li>
+        <li>How to prepare for surgery</li>
+      </ul>
+    </div>
+    <div class="grid-column">
+      <h3 class="list__title">Medicines</h3>
+      <ul class="list__list">
+        <li>Know more about medicines</li>
+      </ul>
+
+      <h3 class="list__title">GP Information</h3>
+      <ul class="list__list">
+        <li>How to access GP services</li>
+      </ul>
+    </div>
+  </div>
 {% endcall %}
+
 
 {% call section('s04') %}
-  {% include '_sections/04-transforming-services.njk' %}
+  <h2>Transforming Services & Transactions</h2>
+
+  <p>User centred services and prototypes we are testing in public.</p>
+
+  <div class="grid-row">
+    <div class="grid-column">
+      <div class="service-block">
+        <h3 class="service-block__title">I need to register with a GP</h3>
+        <div class="service-block__phase">Beta</div>
+        <p>Simplifying the process of registering with a GP.</p>
+        <p class="service-block__link">
+          <a href="#" class="button">Register</a>
+        </p>
+      </div>
+    </div>
+    <div class="grid-column">
+      <div class="service-block">
+        <h3 class="service-block__title">I need to know where to get help</h3>
+        <div class="service-block__phase">Beta</div>
+        <p>Connecting people with the services they need, when they need them.</p>
+        <p class="service-block__link">
+          <a href="#" class="button">Find a pharmacy</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="grid-column">
+      <div class="service-block">
+        <h3 class="service-block__title">I need to book a GP appointment</h3>
+        <div class="service-block__phase">Beta</div>
+        <p>Getting access to primary care.</p>
+        <p class="service-block__link">
+          <a href="#" class="button">Book an appointment</a>
+        </p>
+      </div>
+    </div>
+    <div class="grid-column">
+      <div class="service-block">
+        <h3 class="service-block__title">I need to manage a long-term condition</h3>
+        <div class="service-block__phase">Alpha</div>
+        <p>Help patients understand and manage long term conditions</p>
+        <p class="service-block__link">
+          <a href="#" class="button">Diabetes planner</a>
+        </p>
+      </div>
+    </div>
+  </div>
 {% endcall %}
 
+
 {% call section('s05') %}
-  {% include '_sections/05-transforming-access.njk' %}
+  <h2>Transforming Access</h2>
+
+  <div class="grid-row">
+    <div class="grid-column">
+      <div class="callout callout--info">
+        <h3>Apps Library</h3>
+        <p>NHS approved apps and wearables.</p>
+        <p class="callout__link">
+          <a href="#">Visit the Apps Library</a>
+        </p>
+      </div>
+    </div>
+    <div class="grid-column">
+      <div class="callout callout--info">
+        <h3>NHS Wifi</h3>
+        <p>Providing free wifi in GP surgeries in partnership with Doteveryone.</p>
+        <p class="callout__link">
+          <a href="#">Visit the Wifi page</a>
+        </p>
+      </div>
+    </div>
+  </div>
 {% endcall %}
