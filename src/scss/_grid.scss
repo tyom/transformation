@@ -17,11 +17,9 @@
 
   & + & {
     margin-top: 1rem;
-    margin-bottom: 1rem;
 
     @include media(desktop) {
       margin-top: 0;
-      margin-bottom: 0;
     }
   }
 }
