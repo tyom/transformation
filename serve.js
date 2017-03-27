@@ -10,7 +10,7 @@ metalsmith
     watch({
       paths: {
         '${source}/**/*': true,
-        '${source}/styles/**/*.scss': 'styles/main.scss'
+        '${source}/scss/**/*.scss': 'scss/main.scss'
       }
     })
   )

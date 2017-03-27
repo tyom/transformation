@@ -22,7 +22,6 @@ const metalsmith = Metalsmith(__dirname)
   .use(sass({
     outputDir: 'assets/css/',
     includePaths: [
-      path.join(__dirname, 'node_modules'),
       path.join(__dirname, 'node_modules/nhsuk-frontend/dist/scss')
     ],
     importer: importOnce,
