@@ -29,7 +29,8 @@ const metalsmith = Metalsmith(__dirname)
     importOnce: {
       index: true,
       css: true
-    }
+    },
+    sourceMap: true
   }))
   .use(inPlace({
     engine: 'nunjucks',
@@ -48,7 +49,7 @@ const metalsmith = Metalsmith(__dirname)
     '**/_*.*',
     '_**/*',
     'assets/css/nhs*',
-    'scss/**/*'
+    'scss/**/*',
   ]))
   .destination('build');
 

@@ -14,7 +14,7 @@ metalsmith
       }
     })
   )
-  .build((err) => {
+  .build(err => {
     if (err) throw err;
     console.info('Build finished!');
   });
