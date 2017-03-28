@@ -1,77 +1,66 @@
 .list__title {
   text-transform: uppercase;
-  color: rgba($white, .6);
+  color: $blue-50;
   font-weight: 600;
-  font-size: .9rem;
+  font-size: 16px;
 }
 
 .list {
   ul {
-    transition: 200ms;
     list-style: none;
-    padding: 0;
     margin-top: 10px;
-    font-size: 1rem;
+    padding: 0;
+    font-size: 16px;
     line-height: 1.4;
+    transition: 200ms;
   }
 
   li {
     margin: 0;
-    padding: 2px 0;
   }
 
-  a {
-    color: inherit;
-
-    &:hover {
-      text-decoration: none;
-    }
+  a:hover {
+    text-decoration: none;
+    color: $blue-50;
   }
 }
 
 .list__list {
-  $_border-color: rgba($white, .4);
+  border-top: 1px solid $blue-50;
+}
 
-  border-top: 1px solid $_border-color;
+.list__item {
+  border-bottom: 1px solid $blue-50;
+  padding: 10px 0;
 
-  > li {
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-bottom: 1px solid $_border-color;
-    padding: 10px 0;
-  }
-
-  ul li {
-    font-weight: normal;
+  li {
+    padding: 2px 0;
   }
 }
 
 .js-enabled .list__expander {
   display: block;
   background: none;
-  border: 0;
-  width: calc(100% + 10px);
-  font-size: inherit;
-  text-align: inherit;
-  font-weight: inherit;
-  padding: 4px 20px 4px 4px;
+  padding: 4px 25px 4px 4px;
   margin: -4px;
+  font-weight: 600;
+  font-size: 20px;
   color: inherit;
   cursor: pointer;
   overflow: hidden;
   user-select: none;
   position: relative;
 
-  &::after {
+  &:before {
     content: "+";
     position: absolute;
     font-size: 30px;
     line-height: 15px;
-    top: 8px;
+    top: 11px;
     right: 5px;
   }
 
-  &.is-expanded::after {
+  &.is-expanded:before {
     content: "−";
   }
 

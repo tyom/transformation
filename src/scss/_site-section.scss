@@ -1,7 +1,7 @@
 .site-section {
   position: relative;
 
-  &::before {
+  &:before {
     content: "";
     position: absolute;
     top: 0;
@@ -33,7 +33,7 @@
   }
 
   * + * {
-    margin-top: 1rem;
+    margin-top: 16px;
   }
 
 }

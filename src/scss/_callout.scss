@@ -2,7 +2,7 @@
   position: relative;
 
   & + & {
-    margin-top: 1rem;
+    margin-top: 16px;
 
     @include media(desktop) {
       margin-top: 0;
@@ -10,7 +10,7 @@
   }
 
   @include media(desktop) {
-    min-height: 15rem;
+    min-height: 230px;
   }
 }
 

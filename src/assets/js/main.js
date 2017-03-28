@@ -1,12 +1,17 @@
 $(function() {
+  function handleExpanderClick() {
+    $(this)
+      .toggleClass('is-expanded')
+      .siblings('ul')
+      .toggleClass('is-collapsed');
+  }
+
   $('.list__expander')
-    .removeClass('list__expander')
-    .wrap('<button class="list__expander">')
-    .parent()
-    .on('click', function(evt) {
-      $(this)
-        .toggleClass('is-expanded')
-        .siblings('ul')
-        .toggleClass('is-collapsed');
-  });
+    .on('click', handleExpanderClick)
+    .on('keypress', function(evt) {
+      if (evt.which === 13 || evt.which === 32) {
+        $(this).click();
+        evt.preventDefault();
+      }
+    });
 });

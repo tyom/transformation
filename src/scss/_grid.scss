@@ -2,12 +2,12 @@
   @include grid-row;
 
   &.grid-row {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
 
     @include media(desktop) {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-top: 36px;
+      margin-bottom: 36px;
     }
   }
 }
@@ -16,7 +16,7 @@
   @include grid-column(1/2);
 
   & + & {
-    margin-top: 1rem;
+    margin-top: 16px;
 
     @include media(desktop) {
       margin-top: 0;

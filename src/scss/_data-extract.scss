@@ -9,26 +9,41 @@
   color: $grey-1;
   line-height: 1.2;
 
-  + dl {
-    margin-left: 10px;
+  @include ie-lte(7) {
+    display: block;
   }
 
-  > div {
+  + dl {
+    margin-left: 10px;
+
+    @include ie-lte(7) {
+      margin-left: 0;
+    }
+  }
+
+  div {
     width: 190px;
     height: 190px;
     padding: 10px;
     display: table-cell;
     vertical-align: middle;
+
+    @include ie-lte(7) {
+      display: block;
+      height: auto;
+      width: auto;
+      padding: 20px;
+    }
   }
 
   dt {
     text-transform: uppercase;
-    font-size: 3.3rem;
+    font-size: 36px;
     display: block;
     font-weight: 800;
 
-    > span {
-      font-size: .9rem;
+    span {
+      font-size: 16px;
       display: block;
     }
   }

@@ -2,8 +2,7 @@
 
 {% block head_stylesheets %}
   <!--[if gt IE 8]><!--><link href="{{ asset_path('assets/css/main.css') }}" media="screen" rel="stylesheet" type="text/css"><!--<![endif]-->
-  <!--[if IE 6]><link href="{{ asset_path('assets/css/main-ie6.css') }}" media="screen" rel="stylesheet" type="text/css"><![endif]-->
-  <!--[if IE 7]><link href="{{ asset_path('assets/css/main-ie7.css') }}" media="screen" rel="stylesheet" type="text/css"><![endif]-->
+  <!--[if lt IE 8]><link href="{{ asset_path('assets/css/main-ie7.css') }}" media="screen" rel="stylesheet" type="text/css"><![endif]-->
   <!--[if IE 8]><link href="{{ asset_path('assets/css/main-ie8.css') }}" media="screen" rel="stylesheet" type="text/css"><![endif]-->
 {% endblock %}
 

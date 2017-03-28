@@ -5,14 +5,18 @@
   position: relative;
 
   @include media(desktop) {
-    min-height: 21rem;
+    min-height: 330px;
+  }
+
+  @include ie-lte(8) {
+    min-height: 0;
   }
 }
 
 .service-block__title {
   @include underline;
   margin-right: 60px;
-  font-size: 1.9rem;
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -32,5 +36,11 @@ div.service-block__phase {
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+
+  @include ie-lte(9) {
+    position: relative;
+    padding: 0;
+    margin-top: 20px;
   }
 }
