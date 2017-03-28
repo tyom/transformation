@@ -14,7 +14,7 @@ const env = nunjucks.configure([
 ], { watch: false });
 
 env.addGlobal('asset_path', (filename) => {
-  return `/${filename}`;
+  return `./${filename}`;
 });
 
 const metalsmith = Metalsmith(__dirname)
