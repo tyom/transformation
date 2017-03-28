@@ -2,6 +2,7 @@
   "name": "nhs-transformation",
   "private": true,
   "dependencies": {
+    "gh-pages": "^0.12.0",
     "metalsmith": "^2.3.0",
     "metalsmith-assets": "^0.1.0",
     "metalsmith-ignore": "^0.1.2",
@@ -16,6 +17,7 @@
   },
   "scripts": {
     "build": "node build.js",
-    "serve": "node serve.js"
+    "serve": "node serve.js",
+    "deploy": "npm run build && gh-pages -d build"
   }
 }
