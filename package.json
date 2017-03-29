@@ -8,6 +8,7 @@
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-in-place": "^1.4.4",
     "metalsmith-layouts": "^1.8.0",
+    "metalsmith-relative": "^1.0.3",
     "metalsmith-sass": "^1.4.0",
     "metalsmith-serve": "^0.0.7",
     "metalsmith-watch": "^1.0.3",

@@ -1,16 +1,24 @@
 {% extends "nhsuk-base.njk" %}
 
-{% block head_stylesheets %}
-  <!--[if gt IE 8]><!--><link href="{{ asset_path('assets/css/main.css') }}" media="screen" rel="stylesheet" type="text/css"><!--<![endif]-->
-  <!--[if lt IE 8]><link href="{{ asset_path('assets/css/main-ie7.css') }}" media="screen" rel="stylesheet" type="text/css"><![endif]-->
-  <!--[if IE 8]><link href="{{ asset_path('assets/css/main-ie8.css') }}" media="screen" rel="stylesheet" type="text/css"><![endif]-->
-{% endblock %}
-
 {% block head %}
   {{ super() }}
   <!--[if lt IE 9]>
-    <script src="{{ asset_path('assets/js/ie.js') }}"></script>
+    <script src="{{ asset_path(relative('assets/js/ie.js')) }}"></script>
   <![endif]-->
+{% endblock %}
+
+{% block head_content %}
+  <!--[if IE]><link rel="shortcut icon" href="{{ asset_path(relative('assets/images/favicon.ico')) }}"><![endif]-->
+  <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+  <link rel="apple-touch-icon" href="{{ asset_path(relative('assets/images/apple-touch-icon.png')) }}">
+  <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 pixels in size. -->
+  <link rel="icon" href="{{ asset_path(relative('assets/images/favicon.png')) }}">
+{% endblock %}
+
+{% block head_stylesheets %}
+  <!--[if gt IE 8]><!--><link href="{{ asset_path(relative('assets/css/main.css')) }}" media="screen" rel="stylesheet" type="text/css"><!--<![endif]-->
+  <!--[if lt IE 8]><link href="{{ asset_path(relative('assets/css/main-ie7.css')) }}" media="screen" rel="stylesheet" type="text/css"><![endif]-->
+  <!--[if IE 8]><link href="{{ asset_path(relative('assets/css/main-ie8.css')) }}" media="screen" rel="stylesheet" type="text/css"><![endif]-->
 {% endblock %}
 
 {% block body %}
@@ -26,7 +34,7 @@
     ga('send', 'pageview');
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="{{ asset_path('assets/js/main.js') }}"></script>
+  <script src="{{ asset_path(relative('assets/js/main.js')) }}"></script>
 {% endblock %}
 
 {% block body_main_content %}

@@ -7,18 +7,18 @@ const inPlace = require('metalsmith-in-place');
 const ignore = require('metalsmith-ignore');
 const nunjucks = require('nunjucks');
 const importOnce = require('node-sass-import-once');
+const relative = require('metalsmith-relative');
 
 const env = nunjucks.configure([
   path.join(__dirname, 'node_modules/nhsuk-frontend/src/templates'),
   path.join(__dirname, 'src')
 ], { watch: false });
 
-env.addGlobal('asset_path', (filename) => {
-  return `./${filename}`;
-});
+env.addGlobal('asset_path', filename => filename);
 
 const metalsmith = Metalsmith(__dirname)
   .source('src')
+  .use(relative())
   .use(sass({
     outputDir: 'assets/css/',
     includePaths: [
