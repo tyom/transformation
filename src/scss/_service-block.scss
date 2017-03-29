@@ -1,11 +1,11 @@
 .service-block {
   @include element-padding;
   border: 8px solid $blue-50;
-  background-color: $white;
+  background-color: tint($blue-10, 40);
   position: relative;
 
   @include media(desktop) {
-    min-height: 330px;
+    min-height: 350px;
   }
 
   @include ie-lte(8) {
@@ -16,16 +16,18 @@
 .service-block__title {
   @include underline;
   margin-right: 60px;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 800;
 }
 
 div.service-block__phase {
-  background-color: $yellow-50;
+  background-color: $blue-50;
   text-transform: uppercase;
+  color: $white;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 10px;
   padding: 5px 10px;
   margin: 0;
 }

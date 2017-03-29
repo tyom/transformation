@@ -39,7 +39,6 @@ h2 {
   zoom: 1;
 }
 
-
 .video {
   padding-top: 100%/(16/9);
   background: $blue-50;
@@ -54,7 +53,6 @@ h2 {
 
   &:before {
     background-image: url(../background-doctor.jpg);
-    background-size: cover;
     background-position: 50% 0%;
   }
 }
@@ -63,6 +61,11 @@ h2 {
 #s02-2,
 #s02-3 {
   background-color: $yellow-50;
+
+  h2 {
+    font-size: 32px;
+    @include underline($yellow);
+  }
 }
 
 #s02-1:before {
@@ -71,14 +74,21 @@ h2 {
   margin-bottom: -30px;
   background-position: 60% 30%;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0 100%);
+  opacity: .5;
+
+  @include media(desktop) {
+    opacity: 1;
+  }
 }
 
 #s02-2 .side-image {
   display: block;
-  margin: auto;
+  margin: -20px auto 0;
+  width: 100%;
+  height: auto;
 
   @include media(desktop) {
-    margin: -30px 0;
+    margin: -100px 0;
   }
 }
 
@@ -94,8 +104,20 @@ h2 {
 #s03 {
   background-color: $nhs-blue;
   color: $white;
+
+  h2 {
+    font-size: 32px;
+  }
 }
 
 #s04 {
   background-color: $blue-10;
+
+  h2 {
+    font-size: 32px;
+  }
+}
+
+.list {
+  margin-top: 32px;
 }
