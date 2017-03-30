@@ -5,16 +5,22 @@
 .data-extract {
   display: inline-block;
   border-radius: 100%;
-  background: $white;
+  background-color: rgba($white,0.8);
   color: $grey-1;
   line-height: 1.2;
+
+  @include ie-lte(8) {
+    background-color: $white;
+  }
 
   @include ie-lte(7) {
     display: block;
   }
 
   + dl {
-    margin-left: 10px;
+    @include media(desktop) {
+      margin-left: 10px;
+    }
 
     @include ie-lte(7) {
       margin-left: 0;
@@ -38,7 +44,7 @@
 
   dt {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 42px;
     display: block;
     font-weight: 800;
 
@@ -52,11 +58,12 @@
     text-transform: uppercase;
     font-size: .9rem;
     font-weight: 600;
+    margin-top: 8px !important;
   }
 }
 
 .data-extract--var-1 {
-  background-color: $dark-blue;
+  background-color: $blue;
   color: $white;
 }
 .data-extract--var-2 {
