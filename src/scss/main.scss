@@ -44,6 +44,17 @@ h2 {
   background: $blue-50;
   margin-top: 36px;
   box-shadow: 0 1px 20px rgba($black, .2);
+  position: relative;
+}
+
+.video__player {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 #s01 {
